@@ -5,3 +5,5 @@
 TBD
 
 ## Link to project website
+
+https://kitzing.github.io/MobileComputingProject/
