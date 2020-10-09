@@ -6,4 +6,4 @@ TBD
 
 ## Link to project website
 
-https://kitzing.github.io/MobileComputingProject/
+https://kitzing.github.io/webpagetest/
