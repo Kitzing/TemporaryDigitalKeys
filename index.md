@@ -12,6 +12,7 @@ This is some nice text about the oppertunity we found and out chosen methods to 
 
 ### Iteration 1
 Information and pictures from the first iteration
+![Image](src)
 
 ### Iteration 2
 Information and pictures from the second iteration
