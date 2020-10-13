@@ -12,15 +12,18 @@ This is some nice text about the oppertunity we found and out chosen methods to 
 
 ### Iteration 1
 Information and pictures from the first iteration
-<img src="testbild.png">
+<img src="iteration1.png">
 
 
 ### Iteration 2
 Information and pictures from the second iteration with some fancy text to check if pictures work
+<img src="iteration2.png">
+
 
 ### Iteration 3
 Information and pictures from the third iteration
-![image](testbild.png)
+<img src="iteration3.png">
+
 
 
 ## Final result
