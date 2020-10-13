@@ -15,7 +15,7 @@ Information and pictures from the first iteration
 ![Image](https://github.com/Kitzing/TemporaryDigitalKeys/blob/master/testbild.png)
 
 ### Iteration 2
-Information and pictures from the second iteration
+Information and pictures from the second iteration with some fancy text to check if pictures work
 
 ### Iteration 3
 Information and pictures from the third iteration
