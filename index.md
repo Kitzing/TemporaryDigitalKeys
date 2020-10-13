@@ -5,7 +5,7 @@ This is som fancy text about our project, look how fancy.
 ### Design challenge and approach
 
 We have decided to use the design challenge Digital Authentication and Access in combination with the "Design for the real world"-approach.
-<div style="color="Black""> </dev>
+<div style="color:black"> </dev>
 
 ### Oppertunity description and method approach
 
