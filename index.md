@@ -12,17 +12,17 @@ This is some nice text about the oppertunity we found and out chosen methods to 
 
 ### Iteration 1
 Information and pictures from the first iteration
-<img src="iteration1.png">
+<img src="Iteration1.png">
 
 
 ### Iteration 2
 Information and pictures from the second iteration with some fancy text to check if pictures work
-<img src="iteration2.png">
+<img src="Iteration2.png">
 
 
 ### Iteration 3
 Information and pictures from the third iteration
-<img src="iteration3.png">
+<img src="Iteration3.png">
 
 
 
