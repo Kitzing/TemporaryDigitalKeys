@@ -12,14 +12,15 @@ This is some nice text about the oppertunity we found and out chosen methods to 
 
 ### Iteration 1
 Information and pictures from the first iteration
-<img src="https://github.com/Kitzing/TemporaryDigitalKeys/blob/master/testbild.png">
-![image](https://github.com/Kitzing/TemporaryDigitalKeys/blob/master/testbild.png)
+<img src="testbild.png">
+
 
 ### Iteration 2
 Information and pictures from the second iteration with some fancy text to check if pictures work
 
 ### Iteration 3
 Information and pictures from the third iteration
+![image](testbild.png)
 
 
 ## Final result
