@@ -12,7 +12,7 @@ This is some nice text about the oppertunity we found and out chosen methods to 
 
 ### Iteration 1
 Information and pictures from the first iteration
-![Image](https://github.com/Kitzing/TemporaryDigitalKeys/blob/master/Skärmavbild%202020-10-09%20kl.%2014.35.31.png)
+![Image](https://github.com/Kitzing/TemporaryDigitalKeys/blob/master/testbild.png)
 
 ### Iteration 2
 Information and pictures from the second iteration
