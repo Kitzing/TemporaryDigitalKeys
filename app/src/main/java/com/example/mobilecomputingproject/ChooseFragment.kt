@@ -5,6 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.mobilecomputingproject.ui.settings.KeyAdapter
+import com.example.mobilecomputingproject.ui.settings.SettingsViewModel
+import kotlinx.android.synthetic.main.fragment_choose.view.*
+import kotlinx.android.synthetic.main.fragment_settings.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,14 +32,21 @@ class ChooseFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val root = inflater.inflate(R.layout.fragment_choose, container, false)
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_choose, container, false)
+
+        root.your_keys_list_choose.adapter = KeyAdapter(SettingsViewModel().exampleList)
+        root.your_keys_list_choose.layoutManager = LinearLayoutManager(this.context)
+        root.your_keys_list_choose.setHasFixedSize(true)
+
+        return root
     }
 
     companion object {

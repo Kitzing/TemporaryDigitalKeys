@@ -8,7 +8,12 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mobilecomputingproject.R
+import com.example.mobilecomputingproject.ui.receive.ReceiveAdapter
+import com.example.mobilecomputingproject.ui.receive.ReceiveViewModel
+import kotlinx.android.synthetic.main.fragment_receive.view.*
+import kotlinx.android.synthetic.main.fragment_settings.view.*
 
 class SettingsFragment : Fragment() {
 
@@ -26,6 +31,10 @@ class SettingsFragment : Fragment() {
        // notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
        //     textView.text = it
        // })
+
+        root.your_keys_list.adapter = KeyAdapter(SettingsViewModel().exampleList)
+        root.your_keys_list.layoutManager = LinearLayoutManager(this.context)
+        root.your_keys_list.setHasFixedSize(true)
         return root
     }
 }

@@ -15,4 +15,8 @@
     <string name="number">Number</string>
     <string name="your_keys">Your keys</string>
     <string name="save_changes">Save changes</string>
+    <string name="select_key">Select key</string>
+    <string name="add_key">+ Add key</string>
+    <string name="edit">Edit</string>
+    <string name="address_other_info"><![CDATA[Address & other info]]></string>
 </resources>
