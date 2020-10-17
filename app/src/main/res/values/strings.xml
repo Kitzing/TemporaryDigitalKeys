@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">MobileComputingProject</string>
     <string name="title_activity_bottom_nav">MainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_lend">Lend keys</string>
+    <string name="title_receive">Receive keys</string>
+    <string name="title_settings">Settings</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lend_new_key">+ Lend new key</string>
+    <string name="lended_keys">Lended keys</string>
 </resources>

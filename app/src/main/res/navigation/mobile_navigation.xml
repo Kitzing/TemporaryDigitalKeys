@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.mobilecomputingproject.ui.lend.LendFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_lend" >
+        android:label="@string/title_lend"
+        tools:layout="@layout/fragment_lend">
         <action
             android:id="@+id/action_navigation_home_to_chooseFragment"
             app:destination="@id/chooseFragment" />
@@ -18,13 +18,13 @@
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.example.mobilecomputingproject.ui.receive.ReceiveFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_receive"
         tools:layout="@layout/fragment_receive" />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.mobilecomputingproject.ui.settings.SettingsFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_settings"
         tools:layout="@layout/fragment_settings" >
         <action
             android:id="@+id/action_navigation_notifications_to_addFragment"
