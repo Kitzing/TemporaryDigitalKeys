@@ -15,8 +15,8 @@ class LendAdapter (private val lendList: List<LendListItem> ): RecyclerView.Adap
 
     class LendViewHolder (itemView : View) : RecyclerView.ViewHolder (itemView) {
         val imageView: ImageView = itemView.lend_image_view
-        val textView1: TextView = itemView.lend_text_view_1
-        val textView2: TextView = itemView.lend_text_view_2
+        val textView1: TextView = itemView.lend_text_view_name
+        val textView2: TextView = itemView.lend_text_view_date
 
     }
 
