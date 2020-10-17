@@ -15,8 +15,9 @@ class LendAdapter (private val lendList: List<LendListItem> ): RecyclerView.Adap
 
     class LendViewHolder (itemView : View) : RecyclerView.ViewHolder (itemView) {
         val imageView: ImageView = itemView.lend_image_view
-        val textView1: TextView = itemView.lend_text_view_name
-        val textView2: TextView = itemView.lend_text_view_date
+        val name: TextView = itemView.lend_text_view_name
+        val date: TextView = itemView.lend_text_view_date
+        val keytype: TextView = itemView.lend_text_view_keytype
 
     }
 
@@ -31,8 +32,9 @@ class LendAdapter (private val lendList: List<LendListItem> ): RecyclerView.Adap
         val currentItem = lendList[position]
 
         holder.imageView.setImageResource(currentItem.imageResource)
-        holder.textView1.text = currentItem.text1
-        holder.textView2.text = currentItem.text2
+        holder.name.text = currentItem.name
+        holder.date.text = currentItem.date
+        holder.keytype.text = currentItem.keytype
     }
 
     override fun getItemCount() = lendList.size
@@ -40,5 +42,5 @@ class LendAdapter (private val lendList: List<LendListItem> ): RecyclerView.Adap
 
 }
 
-data class LendListItem (val imageResource: Int, val text1: String, val text2: String) {
+data class LendListItem (val imageResource: Int, val name: String, val date: String, val keytype: String) {
 }

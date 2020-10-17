@@ -25,10 +25,10 @@ private fun generateDummyList(size: Int): List<LendListItem> {
             1 -> R.drawable.ic_key
             else -> R.drawable.ic_key
         }
-        val item = LendListItem(drawable, "Item $i", "Line 2")
+        val item = LendListItem(drawable, "Item $i", "Line 2", "Keytypee")
         list += item
     }
-    Log.d("Test", "List created")
+
     return list
 }
 }
