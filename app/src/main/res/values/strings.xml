@@ -9,4 +9,10 @@
     <string name="lend_new_key">+ Lend new key</string>
     <string name="lended_keys">Lended keys</string>
     <string name="received_keys">Received keys</string>
+    <string name="your_information">Your information</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="number">Number</string>
+    <string name="your_keys">Your keys</string>
+    <string name="save_changes">Save changes</string>
 </resources>
