@@ -33,12 +33,12 @@
     <fragment
         android:id="@+id/addFragment"
         android:name="com.example.mobilecomputingproject.AddFragment"
-        android:label="fragment_add"
+        android:label="Lend keys"
         tools:layout="@layout/fragment_add" />
     <fragment
         android:id="@+id/chooseFragment"
         android:name="com.example.mobilecomputingproject.ChooseFragment"
-        android:label="fragment_choose"
+        android:label="Lend keys"
         tools:layout="@layout/fragment_choose" >
         <action
             android:id="@+id/action_chooseFragment_to_addFragment"
@@ -50,7 +50,7 @@
     <fragment
         android:id="@+id/sendFragment"
         android:name="com.example.mobilecomputingproject.SendFragment"
-        android:label="fragment_send"
+        android:label="Lend keys"
         tools:layout="@layout/fragment_send" >
         <action
             android:id="@+id/action_sendFragment_to_navigation_home"
