@@ -5,10 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mobilecomputingproject.ui.settings.KeyAdapter
 import com.example.mobilecomputingproject.ui.settings.SettingsViewModel
 import kotlinx.android.synthetic.main.fragment_choose.view.*
+import kotlinx.android.synthetic.main.fragment_lend.view.*
 import kotlinx.android.synthetic.main.fragment_settings.view.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -45,6 +47,11 @@ class ChooseFragment : Fragment() {
         root.your_keys_list_choose.adapter = KeyAdapter(SettingsViewModel().exampleList)
         root.your_keys_list_choose.layoutManager = LinearLayoutManager(this.context)
         root.your_keys_list_choose.setHasFixedSize(true)
+
+        root.add_button.setOnClickListener{
+                view : View ->
+            view.findNavController().navigate(R.id.action_chooseFragment_to_addFragment)
+        }
 
         return root
     }
