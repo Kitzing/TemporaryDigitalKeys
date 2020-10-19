@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mobilecomputingproject.ui.settings.KeyAdapter
@@ -51,6 +52,10 @@ class ChooseFragment : Fragment() {
         root.add_button.setOnClickListener{
                 view : View ->
             view.findNavController().navigate(R.id.action_chooseFragment_to_addFragment)
+        }
+
+        root.your_keys_list_choose.setOnClickListener{
+            Toast.makeText(this.context,"Cell clicked", Toast.LENGTH_SHORT).show()
         }
 
         return root
