@@ -8,12 +8,18 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mobilecomputingproject.R
+import com.example.mobilecomputingproject.database.Key
 
 import kotlinx.android.synthetic.main.settings_keys_list_item.view.*
 
-class KeyAdapter (private val keyList: List<KeyListItem>, private val listener: KeyAdapter.OnButtonClickListener): RecyclerView.Adapter<KeyAdapter.KeyViewHolder>() {
+class KeyAdapter (private val listener: KeyAdapter.OnButtonClickListener): RecyclerView.Adapter<KeyAdapter.KeyViewHolder>() {
 
 
+    var data = listOf<Key>()
+        set(value) {
+            field = value
+            notifyDataSetChanged()
+        }
 
     inner class KeyViewHolder (itemView : View) : RecyclerView.ViewHolder (itemView), View.OnClickListener {
         val imageView: ImageView = itemView.key_image_view
@@ -47,15 +53,18 @@ class KeyAdapter (private val keyList: List<KeyListItem>, private val listener: 
     }
 
     override fun onBindViewHolder(holder: KeyViewHolder, position: Int) {
-        val currentItem = keyList[position]
+        val item = data[position]
 
-        holder.imageView.setImageResource(currentItem.imageResource)
-        holder.name.text = currentItem.name
-        holder.address.text = currentItem.address
+        holder.imageView.setImageResource(R.drawable.ic_key)
+        holder.name.text = item.keyName.toString()
+        holder.address.text = item.address.toString()
+       // holder.imageView.setImageResource(currentItem.imageResource)
+       // holder.name.text = currentItem.name
+       // holder.address.text = currentItem.address
 
     }
 
-    override fun getItemCount() = keyList.size
+    override fun getItemCount() = data.size
 
 
 }

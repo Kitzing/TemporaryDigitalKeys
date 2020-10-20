@@ -13,6 +13,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mobilecomputingproject.R
+import com.example.mobilecomputingproject.database.KeyDatabase
 import com.example.mobilecomputingproject.ui.lend.LendAdapter
 import com.example.mobilecomputingproject.ui.lend.LendFragmentDirections
 import com.example.mobilecomputingproject.ui.receive.ReceiveAdapter
@@ -38,9 +39,21 @@ class SettingsFragment : Fragment(), KeyAdapter.OnButtonClickListener {
        //     textView.text = it
        // })
 
-        root.your_keys_list.adapter = KeyAdapter(SettingsViewModel().exampleList, this)
+        val application = requireNotNull(this.activity).application
+
+        val dataSource = KeyDatabase.getInstance(application).KeyDatabaseDao
+        val viewModelFactory = SettingsViewModelFactory(dataSource, application)
+
+
+        val adapter = KeyAdapter(this)
+        root.your_keys_list.adapter = adapter
         root.your_keys_list.layoutManager = LinearLayoutManager(this.context)
         root.your_keys_list.setHasFixedSize(true)
+
+        SettingsViewModel().keys.observe(viewLifecycleOwner, Observer { it?.let{
+            adapter.data = it
+        }
+        })
 
 
         root.save_button.setOnClickListener{
