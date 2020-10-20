@@ -54,11 +54,17 @@ class SendFragment : Fragment() {
         root.sendKeyHeader.setText("Send ${args.keyName}")
 
         root.send_button.setOnClickListener { view ->
+
+            //TODO make sure fields has values before being able to click on button
+
             when (view.getId()) {
                 R.id.send_button -> {
-                   // val item1 = LendListItem("Testelitest", "2020-08-12 11:00 - 2020-08-12 13:00", "Home key")
 
-                  //  LendViewModel().exampleList += item1
+                   val item = LendListItem(root.editTextSearchUser.text.toString(), "${root.editTextFromDate.text} - ${root.editTextToDate.text}", args.keyName, false)
+
+                   //TODO create item in lendviewmodel List
+
+                  //LendViewModel().exampleList += item1
 
                     view.findNavController().navigate(SendFragmentDirections.actionSendFragmentToNavigationHome())
                 } } }
