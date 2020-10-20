@@ -11,6 +11,9 @@ data class Key(
     @PrimaryKey(autoGenerate = true)
     var keyId: Long = 0L,
 
+    @ColumnInfo(name = "key_name")
+    var keyName: Long,
+
     @ColumnInfo(name = "key_owner")
     var keyOwner: Long,
 
