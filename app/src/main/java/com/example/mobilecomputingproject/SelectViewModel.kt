@@ -15,9 +15,26 @@ class SelectViewModel : ViewModel() {
     }
     // val text: LiveData<String> = _text
 
-    val exampleList = generateDummyList(20)
+    val exampleList = createDummyList()
+
+    private fun createDummyList(): List<SelectKeyListItem> {
+        val list = ArrayList<SelectKeyListItem>()
+
+        val item1 = SelectKeyListItem("Home key")
+        val item2 = SelectKeyListItem("Storage room")
+        val item3 = SelectKeyListItem("Car key")
+
+        list += item1
+        list += item2
+        list += item3
 
 
+        return list
+
+    }
+
+
+/*
     private fun generateDummyList(size: Int): List<SelectKeyListItem> {
         val list = ArrayList<SelectKeyListItem>()
         for (i in 0 until size) {
@@ -32,5 +49,7 @@ class SelectViewModel : ViewModel() {
 
         return list
     }
+
+ */
 
 }

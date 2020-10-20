@@ -20,7 +20,7 @@ class SelectKeyAdapter (private val keyList: List<SelectKeyListItem>, private va
     inner class SelectKeyViewHolder (itemView : View) : RecyclerView.ViewHolder (itemView), View.OnClickListener {
         val imageView: ImageView = itemView.select_key_image_view
         val name: TextView = itemView.select_key_name
-        val address: TextView = itemView.select_key_address
+        //val address: TextView = itemView.select_key_address
 
 
         init {
@@ -51,9 +51,9 @@ class SelectKeyAdapter (private val keyList: List<SelectKeyListItem>, private va
     override fun onBindViewHolder(holder: SelectKeyViewHolder, position: Int) {
         val currentItem = keyList[position]
 
-        holder.imageView.setImageResource(currentItem.imageResource)
+        holder.imageView.setImageResource(R.drawable.ic_lock)
         holder.name.text = currentItem.name
-        holder.address.text = currentItem.address
+        //holder.address.text = currentItem.address
 
     }
 
@@ -61,5 +61,5 @@ class SelectKeyAdapter (private val keyList: List<SelectKeyListItem>, private va
 
 }
 
-data class SelectKeyListItem (val imageResource: Int, val name: String, val address: String) {
+data class SelectKeyListItem (val name: String) {
 }

@@ -23,16 +23,10 @@
             android:text="Name"
             android:layout_toEndOf="@+id/select_key_image_view"
             android:textColor="@color/colorAccent"
+            android:layout_marginTop="13dp"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/select_key_address"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/address_other_info"
-            android:layout_toEndOf="@+id/select_key_image_view"
-            android:layout_below="@id/select_key_name"/>
 
 
     </RelativeLayout>
