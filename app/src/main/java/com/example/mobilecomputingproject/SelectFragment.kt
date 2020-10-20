@@ -74,7 +74,7 @@ class ChooseFragment : Fragment(), SelectKeyAdapter.OnButtonClickListener {
             }
     }
 
-    override fun onButtonClick(position: Int) {
-        findNavController().navigate(ChooseFragmentDirections.actionChooseFragmentToSendFragment(position))
+    override fun onButtonClick(position: Int, keyName: String) {
+        findNavController().navigate(ChooseFragmentDirections.actionChooseFragmentToSendFragment(keyName))
     }
 }

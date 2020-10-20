@@ -53,6 +53,10 @@ class ReceiveAdapter (private val receiveList: List<ReceiveListItem>, private va
         holder.name.text = currentItem.name
         holder.address.text = currentItem.address
         holder.date.text = currentItem.date
+
+        if(!currentItem.active){
+            holder.button.visibility = View.GONE
+        }
     }
 
     override fun getItemCount() = receiveList.size
@@ -60,5 +64,5 @@ class ReceiveAdapter (private val receiveList: List<ReceiveListItem>, private va
 
 }
 
-data class ReceiveListItem ( val name: String, val address: String, val date: String) {
+data class ReceiveListItem ( val name: String, val address: String, val date: String, val active: Boolean) {
 }

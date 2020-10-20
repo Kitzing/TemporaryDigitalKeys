@@ -30,14 +30,14 @@ class SelectKeyAdapter (private val keyList: List<SelectKeyListItem>, private va
         override fun onClick(v: View?) {
             val position = adapterPosition
             if (position != RecyclerView.NO_POSITION) {
-                listener.onButtonClick(position)
+                listener.onButtonClick(position, name.text.toString())
             }
         }
 
     }
 
     interface OnButtonClickListener{
-        fun onButtonClick(position: Int)
+        fun onButtonClick(position: Int, keyName: String)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SelectKeyViewHolder {

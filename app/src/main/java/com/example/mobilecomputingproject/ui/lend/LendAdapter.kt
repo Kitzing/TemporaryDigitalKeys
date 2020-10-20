@@ -1,5 +1,6 @@
 package com.example.mobilecomputingproject.ui.lend
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -51,6 +52,11 @@ class LendAdapter (private val lendList: List<LendListItem>, private val listene
         holder.date.text = currentItem.date
         holder.keytype.text = currentItem.keytype
 
+        if(currentItem.activate){
+            holder.button.setText("Inactivate")
+            holder.button.setBackgroundColor(Color.parseColor("#C62828"))
+        }
+
     }
 
     override fun getItemCount() = lendList.size
@@ -58,5 +64,5 @@ class LendAdapter (private val lendList: List<LendListItem>, private val listene
 
 }
 
-data class LendListItem ( val name: String, val date: String, val keytype: String) {
+data class LendListItem ( val name: String, val date: String, val keytype: String, val activate: Boolean) {
 }

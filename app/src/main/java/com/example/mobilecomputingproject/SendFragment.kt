@@ -1,11 +1,16 @@
 package com.example.mobilecomputingproject
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.findNavController
+import com.example.mobilecomputingproject.ui.lend.LendFragmentDirections
+import com.example.mobilecomputingproject.ui.lend.LendListItem
+import com.example.mobilecomputingproject.ui.lend.LendViewModel
 import kotlinx.android.synthetic.main.fragment_choose.view.*
 import kotlinx.android.synthetic.main.fragment_send.view.*
 
@@ -43,10 +48,47 @@ class SendFragment : Fragment() {
                 view : View ->
             view.findNavController().navigate(R.id.action_sendFragment_to_navigation_home)
         }
+
+        val args = SendFragmentArgs.fromBundle(requireArguments())
+
+        root.sendKeyHeader.setText("Send ${args.keyName}")
+
+        root.send_button.setOnClickListener { view ->
+            when (view.getId()) {
+                R.id.send_button -> {
+                   // val item1 = LendListItem("Testelitest", "2020-08-12 11:00 - 2020-08-12 13:00", "Home key")
+
+                  //  LendViewModel().exampleList += item1
+
+                    view.findNavController().navigate(SendFragmentDirections.actionSendFragmentToNavigationHome())
+                } } }
+
+        /*
+        setOnClickListener(object : View.OnClickListener{
+            override fun onClick(v: View?) {
+                val item1 = LendListItem("Testelitest", "2020-08-12 11:00 - 2020-08-12 13:00", "Home key")
+
+                LendViewModel().exampleList += item1
+
+                v.findNavController().navigate(SendFragmentDirections.actionSendFragmentToNavigationHome())
+            }})
+*/
+
         // Inflate the layout for this fragment
         return root
     }
 
+
+
+    /*
+      val item1 = LendListItem("Testelitest", "2020-08-12 11:00 - 2020-08-12 13:00", "Home key")
+
+            LendViewModel().exampleList += item1
+
+            view : View ->
+            view.findNavController().navigate(SendFragmentDirections.actionSendFragmentToNavigationHome())
+     */
+/*
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -66,4 +108,6 @@ class SendFragment : Fragment() {
                 }
             }
     }
+
+ */
 }
