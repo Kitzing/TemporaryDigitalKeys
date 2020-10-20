@@ -24,7 +24,7 @@
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.mobilecomputingproject.ui.settings.SettingsFragment"
-        android:label="@string/title_settings"
+        android:label="@string/my_keys"
         tools:layout="@layout/fragment_settings" >
         <action
             android:id="@+id/action_navigation_notifications_to_addFragment"
@@ -40,9 +40,6 @@
         android:name="com.example.mobilecomputingproject.ChooseFragment"
         android:label="Lend keys"
         tools:layout="@layout/fragment_choose" >
-        <action
-            android:id="@+id/action_chooseFragment_to_addFragment"
-            app:destination="@id/addFragment" />
         <action
             android:id="@+id/action_chooseFragment_to_sendFragment"
             app:destination="@id/sendFragment" />
