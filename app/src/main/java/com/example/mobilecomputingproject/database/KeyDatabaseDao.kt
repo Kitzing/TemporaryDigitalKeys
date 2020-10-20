@@ -5,6 +5,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
+import java.util.*
 
 @Dao
 interface KeyDatabaseDao {
@@ -21,8 +22,9 @@ interface KeyDatabaseDao {
     @Query("DELETE FROM keys_table")
     fun clear()
 
-
     @Query("SELECT * FROM keys_table WHERE key_owner = :owner ORDER BY keyId DESC")
     fun getAllKeysForOwner(owner: Long): LiveData<List<Key>>
 
+    @Query("SELECT * FROM keys_table WHERE keyId = :key and start_date <= :now  and end_date >= :now")
+    fun isActive(key: Long, now: Date)
 }

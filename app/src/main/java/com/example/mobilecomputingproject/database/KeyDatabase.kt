@@ -22,7 +22,7 @@ abstract class KeyDatabase : RoomDatabase() {
                     instance = Room.databaseBuilder(
                         context.applicationContext,
                         KeyDatabase::class.java,
-                        "sleep_history_database"
+                        "key_databease"
                     )
                         .fallbackToDestructiveMigration()
                         .build()

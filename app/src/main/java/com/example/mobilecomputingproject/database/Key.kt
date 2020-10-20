@@ -14,9 +14,6 @@ data class Key(
     @ColumnInfo(name = "key_owner")
     var keyOwner: Long,
 
-    @ColumnInfo(name = "active")
-    var active: Boolean,
-
     @ColumnInfo(name = "nfckey" )
     var nfcKey: Long,
 
