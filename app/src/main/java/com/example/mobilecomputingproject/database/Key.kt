@@ -14,8 +14,20 @@ data class Key(
     @ColumnInfo(name = "key_owner")
     var keyOwner: Long,
 
+    @ColumnInfo(name = "active")
+    var active: Boolean,
+
     @ColumnInfo(name = "nfckey" )
     var nfcKey: Long,
+
+    @ColumnInfo(name = "Address")
+    var address: Long,
+
+    @ColumnInfo(name = "City")
+    var city: Long,
+
+    @ColumnInfo(name = "Zip_code")
+    var zipCode: Long,
 
     @ColumnInfo(name = "start_date" )
     var startDate: Date,
