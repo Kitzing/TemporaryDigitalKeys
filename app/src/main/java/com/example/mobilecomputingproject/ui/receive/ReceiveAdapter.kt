@@ -49,7 +49,7 @@ class ReceiveAdapter (private val receiveList: List<ReceiveListItem>, private va
     override fun onBindViewHolder(holder: ReceiveViewHolder, position: Int) {
         val currentItem = receiveList[position]
 
-        holder.imageView.setImageResource(currentItem.imageResource)
+        holder.imageView.setImageResource(R.drawable.ic_lock)
         holder.name.text = currentItem.name
         holder.address.text = currentItem.address
         holder.date.text = currentItem.date
@@ -60,5 +60,5 @@ class ReceiveAdapter (private val receiveList: List<ReceiveListItem>, private va
 
 }
 
-data class ReceiveListItem (val imageResource: Int, val name: String, val address: String, val date: String) {
+data class ReceiveListItem ( val name: String, val address: String, val date: String) {
 }

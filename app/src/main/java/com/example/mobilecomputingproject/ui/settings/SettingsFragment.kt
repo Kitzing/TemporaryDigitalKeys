@@ -46,10 +46,16 @@ class SettingsFragment : Fragment(), KeyAdapter.OnButtonClickListener {
 
         Log.d("Help", "1")
 
-        val application = requireNotNull().application
+        val application = requireNotNull(this.context)
+            //.application
+
+        Log.d("Help", "1.1")
 
         val dataSource = KeyDatabase.getInstance(application).KeyDatabaseDao
-        val viewModelFactory = SettingsViewModelFactory(dataSource, application)
+
+        Log.d("Help", "1.2")
+
+        val viewModelFactory = SettingsViewModelFactory(dataSource)
 
         Log.d("Help", "2")
 

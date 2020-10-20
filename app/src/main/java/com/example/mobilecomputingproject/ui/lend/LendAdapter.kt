@@ -46,7 +46,7 @@ class LendAdapter (private val lendList: List<LendListItem>, private val listene
     override fun onBindViewHolder(holder: LendViewHolder, position: Int) {
         val currentItem = lendList[position]
 
-        holder.imageView.setImageResource(currentItem.imageResource)
+        holder.imageView.setImageResource(R.drawable.ic_key)
         holder.name.text = currentItem.name
         holder.date.text = currentItem.date
         holder.keytype.text = currentItem.keytype
@@ -58,5 +58,5 @@ class LendAdapter (private val lendList: List<LendListItem>, private val listene
 
 }
 
-data class LendListItem (val imageResource: Int, val name: String, val date: String, val keytype: String) {
+data class LendListItem ( val name: String, val date: String, val keytype: String) {
 }

@@ -9,7 +9,9 @@ import com.example.mobilecomputingproject.database.Key
 import com.example.mobilecomputingproject.database.KeyDatabaseDao
 import com.example.mobilecomputingproject.ui.receive.ReceiveListItem
 
-class SettingsViewModel(dataSource: KeyDatabaseDao, application: Application) : ViewModel() {
+class SettingsViewModel(dataSource: KeyDatabaseDao) : ViewModel() {
+
+    //, application: Application
 
    /* private val _text = MutableLiveData<String>().apply {
         value = "This is notifications Fragment"

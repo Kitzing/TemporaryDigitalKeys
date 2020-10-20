@@ -14,22 +14,22 @@ class LendViewModel : ViewModel() {
 
    // val keyList: List<String> = listOf<String>("Abu","Praveen","Sathya","Yogesh","Ram")
 
-    val exampleList = generateDummyList(20)
+    val exampleList = createDummyList()
 
+    private fun createDummyList(): List<LendListItem>{
+        val list = ArrayList<LendListItem>()
 
-private fun generateDummyList(size: Int): List<LendListItem> {
-    val list = ArrayList<LendListItem>()
-    for (i in 0 until size) {
-        val drawable = when (i % 3) {
-            0 -> R.drawable.ic_key
-            1 -> R.drawable.ic_key
-            else -> R.drawable.ic_key
-        }
-        val item = LendListItem(drawable, "Item $i", "Line 2", "Keytypee")
-        list += item
+        val item1 = LendListItem("Anna Jansson", "2020-08-12 11:00 - 2020-08-12 13:00", "Home key")
+        val item2 = LendListItem("Jesper Olofsson", "2020-08-13 00:01 - 2020-08-14 23:59", "Garage")
+        val item3 = LendListItem("Truls Andersson", "2020-08-17 09:00 - 2020-08-17 21:00", "Storage room")
+        val item4 = LendListItem("Ulla Eriksson", "2020-08-21 00:01 - 2020-08-27 23:59", "Home key")
+
+        list += item1
+        list += item2
+        list += item3
+        list += item4
+
+        return list
     }
-
-    return list
-}
 }
 

@@ -24,23 +24,24 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class ChooseFragment : Fragment(), SelectKeyAdapter.OnButtonClickListener {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+         * Use this factory method to     // TODO: Rename and change types of parameters
+        private var param1: String? = null
+        private var param2: String? = null
+
+        override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+        param1 = it.getString(ARG_PARAM1)
+        param2 = it.getString(ARG_PARAM2)
         }
 
-    }
+        }
 
-    override fun onCreateView(
+        override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+        ): View? {
         val root = inflater.inflate(R.layout.fragment_choose, container, false)
         // Inflate the layout for this fragment
 
@@ -48,21 +49,14 @@ class ChooseFragment : Fragment(), SelectKeyAdapter.OnButtonClickListener {
         root.your_keys_list_choose.layoutManager = LinearLayoutManager(this.context)
         root.your_keys_list_choose.setHasFixedSize(true)
 
-        root.add_button.setOnClickListener{
-                view : View ->
-            view.findNavController().navigate(R.id.action_chooseFragment_to_addFragment)
+
+        return root
         }
 
 
 
-        return root
-    }
-
-
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
+        companion object {
+        /**create a new instance of
          * this fragment using the provided parameters.
          *
          * @param param1 Parameter 1.
