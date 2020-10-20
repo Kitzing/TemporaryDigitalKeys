@@ -25,7 +25,7 @@ private const val ARG_PARAM2 = "param2"
  */
 class ChooseFragment : Fragment(), SelectKeyAdapter.OnButtonClickListener {
 
-         * Use this factory method to     // TODO: Rename and change types of parameters
+         /* Use this factory method to     // TODO: Rename and change types of parameters
         private var param1: String? = null
         private var param2: String? = null
 
@@ -37,7 +37,7 @@ class ChooseFragment : Fragment(), SelectKeyAdapter.OnButtonClickListener {
         }
 
         }
-
+*/
         override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
