@@ -11,7 +11,7 @@ import com.example.mobilecomputingproject.ui.settings.SettingsViewModel
  *
  * Provides the SleepDatabaseDao and context to the ViewModel.
  */
-class SleepTrackerViewModelFactory(
+class SettingsViewModelFactory(
     private val dataSource: KeyDatabaseDao,
     private val application: Application) : ViewModelProvider.Factory {
     @Suppress("unchecked_cast")

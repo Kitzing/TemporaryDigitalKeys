@@ -1,5 +1,6 @@
 package com.example.mobilecomputingproject.ui.settings
 
+import SettingsViewModelFactory
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -39,18 +41,23 @@ class SettingsFragment : Fragment(), KeyAdapter.OnButtonClickListener {
        //     textView.text = it
        // })
 
+
+
         val application = requireNotNull(this.activity).application
 
         val dataSource = KeyDatabase.getInstance(application).KeyDatabaseDao
         val viewModelFactory = SettingsViewModelFactory(dataSource, application)
 
+        val settingsViewModel =
+            ViewModelProvider(
+                this, viewModelFactory).get(SettingsViewModel::class.java)
 
         val adapter = KeyAdapter(this)
         root.your_keys_list.adapter = adapter
         root.your_keys_list.layoutManager = LinearLayoutManager(this.context)
         root.your_keys_list.setHasFixedSize(true)
 
-        SettingsViewModel().keys.observe(viewLifecycleOwner, Observer { it?.let{
+        settingsViewModel.keys.observe(viewLifecycleOwner, Observer { it?.let{
             adapter.data = it
         }
         })
