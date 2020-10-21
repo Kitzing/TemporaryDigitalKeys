@@ -28,13 +28,14 @@
             android:textSize="20sp"
             android:textStyle="bold"/>
 
-        <TextView
+       <!-- <TextView
             android:id="@+id/key_text_view_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/address_other_info"
             android:layout_toEndOf="@+id/key_image_view"
             android:layout_below="@id/key_text_view_name"/>
+            -->
 
         <Button
             android:id="@+id/edit_button"
@@ -43,7 +44,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="3dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="10dp"
             android:text="@string/edit"
             android:textSize="15sp"
             android:background="@color/colorAccent"
