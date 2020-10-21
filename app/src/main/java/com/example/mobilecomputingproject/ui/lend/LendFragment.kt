@@ -2,6 +2,7 @@ package com.example.mobilecomputingproject.ui.lend
 
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -43,6 +44,8 @@ class LendFragment : Fragment(), LendAdapter.OnButtonClickListener {
                 view : View ->
             view.findNavController().navigate(LendFragmentDirections.actionNavigationHomeToChooseFragment())
         }
+
+        Log.d("Test", LendViewModel().exampleList.toString())
 
 
             return root

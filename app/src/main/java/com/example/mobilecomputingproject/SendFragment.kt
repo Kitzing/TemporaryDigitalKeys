@@ -64,7 +64,7 @@ class SendFragment : Fragment() {
 
                    //TODO create item in lendviewmodel List
 
-                  //LendViewModel().exampleList += item1
+                 // LendViewModel().addToList(item)
 
                     view.findNavController().navigate(SendFragmentDirections.actionSendFragmentToNavigationHome())
                 } } }
