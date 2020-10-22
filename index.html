@@ -1,9 +1,243 @@
 <!DOCTYPE html>
 <html>
+ <meta charset="utf-8">
     <head>
+    <title>Keychain</title>
+        <link rel="stylesheet" href="websitestyle.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
         
     </head>
     <body>
-        <object style="width: 100%; height: 100%;" type="image/svg+xml" data="figma.svg">Your browser does not support SVGs blip blop</object>
+    <nav class="fixed-top navbar">
+            <ul class="menu">
+            <li class="logo"><a href="#">
+            <svg width="244" height="40" viewBox="0 0 244 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M56.1934 20.1172L63.9277 32H67.8828L58.3379 17.6035L67.2852 6.40625H63.3301L55.8242 15.8105L53.3457 18.9043V6.40625H50.0234V32H53.3457V23.3516L56.1934 20.1172ZM80.232 32.3516C82.0836 32.3516 83.6363 31.9824 84.8902 31.2441C86.1559 30.4941 87.1051 29.6387 87.7379 28.6777L85.7516 27.1309C85.1539 27.9043 84.4039 28.5254 83.5016 28.9941C82.5992 29.4629 81.568 29.6973 80.4078 29.6973C79.5289 29.6973 78.7262 29.5332 77.9996 29.2051C77.273 28.877 76.652 28.4258 76.1363 27.8516C75.6324 27.3125 75.234 26.6914 74.941 25.9883C74.6598 25.2852 74.4781 24.4707 74.3961 23.5449V23.4219H87.984V21.9629C87.984 20.6387 87.8141 19.4082 87.4742 18.2715C87.1461 17.1348 86.6422 16.1445 85.9625 15.3008C85.2828 14.4688 84.4273 13.8184 83.3961 13.3496C82.3766 12.8691 81.1812 12.6289 79.8102 12.6289C78.7203 12.6289 77.6539 12.8516 76.6109 13.2969C75.5797 13.7422 74.6598 14.3809 73.8512 15.2129C73.0309 16.0566 72.3746 17.0879 71.8824 18.3066C71.3902 19.5137 71.1441 20.8848 71.1441 22.4199V23.1582C71.1441 24.4824 71.3668 25.707 71.8121 26.832C72.2574 27.957 72.8785 28.9297 73.6754 29.75C74.4723 30.5703 75.4273 31.209 76.5406 31.666C77.6656 32.123 78.8961 32.3516 80.232 32.3516ZM79.8102 15.3008C80.6422 15.3008 81.357 15.4531 81.9547 15.7578C82.5641 16.0625 83.068 16.4609 83.4664 16.9531C83.8648 17.4453 84.1754 18.0312 84.398 18.7109C84.6207 19.3789 84.732 20.0059 84.732 20.5918V20.75H74.5016C74.6305 19.8711 74.8531 19.0977 75.1695 18.4297C75.4977 17.75 75.8961 17.1758 76.3648 16.707C76.8336 16.25 77.3609 15.9043 77.9469 15.6699C78.5328 15.4238 79.1539 15.3008 79.8102 15.3008ZM95.1301 39.6816C95.9855 39.6816 96.7414 39.5234 97.3977 39.207C98.0539 38.8906 98.6281 38.498 99.1203 38.0293C99.6125 37.5605 100.029 37.0508 100.368 36.5C100.72 35.9492 101.007 35.4277 101.23 34.9355L110.88 12.9805H107.241L102.337 25.3203L101.441 27.5527L100.597 25.25L95.3762 12.9805H91.7375L99.9289 31.1035L98.6281 33.6348C98.5109 33.8691 98.3469 34.168 98.1359 34.5312C97.9367 34.8945 97.6965 35.2461 97.4152 35.5859C97.1223 35.9258 96.7883 36.2188 96.4133 36.4648C96.05 36.7109 95.6457 36.834 95.2004 36.834C95.0363 36.834 94.8078 36.8223 94.5148 36.7988C94.2336 36.7871 93.9465 36.7695 93.6535 36.7461L93.1262 39.4004C93.3371 39.4473 93.6477 39.5059 94.0578 39.5762C94.468 39.6465 94.8254 39.6816 95.1301 39.6816ZM123.475 29.7148C122.456 29.7148 121.6 29.5156 120.909 29.1172C120.229 28.707 119.684 28.1738 119.274 27.5176C118.852 26.873 118.548 26.1465 118.36 25.3379C118.184 24.5176 118.096 23.6914 118.096 22.8594V22.1211C118.096 21.3008 118.184 20.4863 118.36 19.6777C118.548 18.8691 118.852 18.1367 119.274 17.4805C119.696 16.8359 120.247 16.3145 120.927 15.916C121.618 15.5059 122.468 15.3008 123.475 15.3008C124.132 15.3008 124.741 15.4121 125.304 15.6348C125.878 15.8574 126.37 16.1621 126.78 16.5488C127.19 16.9355 127.512 17.3867 127.747 17.9023C127.993 18.4062 128.122 18.9453 128.134 19.5195H131.21C131.21 18.5586 131.016 17.6562 130.63 16.8125C130.243 15.9688 129.71 15.2363 129.03 14.6152C128.339 14.0059 127.518 13.5254 126.569 13.1738C125.632 12.8105 124.6 12.6289 123.475 12.6289C122.034 12.6289 120.774 12.8867 119.696 13.4023C118.618 13.918 117.721 14.6094 117.007 15.4766C116.28 16.3555 115.735 17.3691 115.372 18.5176C115.009 19.666 114.827 20.8672 114.827 22.1211V22.8594C114.827 24.125 115.009 25.332 115.372 26.4805C115.735 27.6172 116.28 28.6191 117.007 29.4863C117.721 30.3652 118.618 31.0625 119.696 31.5781C120.774 32.0938 122.034 32.3516 123.475 32.3516C124.483 32.3516 125.45 32.1816 126.376 31.8418C127.302 31.4902 128.122 31.0215 128.837 30.4355C129.552 29.8613 130.12 29.1934 130.542 28.4316C130.975 27.6582 131.198 26.8496 131.21 26.0059H128.134C128.122 26.5332 127.981 27.0254 127.712 27.4824C127.454 27.9277 127.108 28.3145 126.675 28.6426C126.241 28.9824 125.743 29.2461 125.18 29.4336C124.63 29.6211 124.061 29.7148 123.475 29.7148ZM140.395 15.8105V5H137.143V32H140.395V18.1836C140.629 17.8086 140.893 17.4688 141.186 17.1641C141.491 16.8477 141.819 16.5723 142.17 16.3379C142.616 16.0332 143.102 15.7988 143.629 15.6348C144.157 15.4707 144.713 15.3887 145.299 15.3887C146.014 15.377 146.647 15.4766 147.198 15.6875C147.748 15.8867 148.205 16.1914 148.569 16.6016C148.909 16.9766 149.166 17.4512 149.342 18.0254C149.518 18.5879 149.606 19.2441 149.606 19.9941V32H152.858V20.0293C152.858 18.752 152.7 17.6504 152.383 16.7246C152.079 15.7871 151.639 15.0137 151.065 14.4043C150.491 13.7949 149.793 13.3496 148.973 13.0684C148.164 12.7754 147.262 12.6289 146.266 12.6289C145.504 12.6406 144.784 12.752 144.104 12.9629C143.436 13.1738 142.821 13.4844 142.258 13.8945C141.907 14.1406 141.573 14.4277 141.256 14.7559C140.94 15.0723 140.653 15.4238 140.395 15.8105ZM171.412 32H174.805V31.7188C174.594 31.1914 174.43 30.5762 174.312 29.873C174.195 29.1582 174.137 28.4844 174.137 27.8516V19.0098C174.137 17.9434 173.943 17.0117 173.557 16.2148C173.17 15.418 172.643 14.75 171.975 14.2109C171.295 13.6836 170.492 13.291 169.566 13.0332C168.641 12.7637 167.639 12.6289 166.561 12.6289C165.377 12.6289 164.316 12.793 163.379 13.1211C162.453 13.4492 161.668 13.877 161.023 14.4043C160.367 14.9434 159.863 15.5469 159.512 16.2148C159.172 16.8828 158.996 17.5625 158.984 18.2539H162.254C162.254 17.8555 162.348 17.4746 162.535 17.1113C162.734 16.7363 163.01 16.4141 163.361 16.1445C163.713 15.875 164.141 15.6582 164.645 15.4941C165.16 15.3301 165.74 15.248 166.385 15.248C167.076 15.248 167.697 15.3359 168.248 15.5117C168.811 15.6875 169.285 15.9336 169.672 16.25C170.059 16.5781 170.357 16.9707 170.568 17.4277C170.779 17.8848 170.885 18.4004 170.885 18.9746V20.4688H167.334C166.01 20.4688 164.809 20.5977 163.73 20.8555C162.664 21.1133 161.75 21.5 160.988 22.0156C160.227 22.543 159.635 23.1992 159.213 23.9844C158.803 24.7695 158.598 25.6836 158.598 26.7266C158.598 27.5234 158.75 28.2676 159.055 28.959C159.371 29.6387 159.816 30.2246 160.391 30.7168C160.953 31.2207 161.639 31.6191 162.447 31.9121C163.268 32.2051 164.182 32.3516 165.189 32.3516C165.811 32.3516 166.396 32.2871 166.947 32.1582C167.498 32.0293 168.02 31.8535 168.512 31.6309C168.992 31.4082 169.432 31.1504 169.83 30.8574C170.24 30.5645 170.609 30.2539 170.938 29.9258C170.973 30.3242 171.025 30.7109 171.096 31.0859C171.178 31.4492 171.283 31.7539 171.412 32ZM165.664 29.5215C165.031 29.5215 164.475 29.4395 163.994 29.2754C163.514 29.1113 163.115 28.8828 162.799 28.5898C162.482 28.3086 162.242 27.9688 162.078 27.5703C161.926 27.1719 161.85 26.7383 161.85 26.2695C161.85 25.7773 161.938 25.3379 162.113 24.9512C162.301 24.5645 162.57 24.2305 162.922 23.9492C163.414 23.5508 164.076 23.2578 164.908 23.0703C165.752 22.8711 166.736 22.7715 167.861 22.7715H170.885V26.6211C170.697 26.9961 170.439 27.3594 170.111 27.7109C169.783 28.0508 169.396 28.3555 168.951 28.625C168.494 28.8945 167.99 29.1113 167.439 29.2754C166.889 29.4395 166.297 29.5215 165.664 29.5215ZM181.195 12.9805V15.8105H187.664V29.1875H181.195V32H197.121V29.1875H190.916V12.9805H181.195ZM187.242 7.98828C187.242 8.51562 187.4 8.95508 187.716 9.30664C188.045 9.6582 188.537 9.83398 189.193 9.83398C189.837 9.83398 190.324 9.6582 190.652 9.30664C190.98 8.95508 191.144 8.51562 191.144 7.98828C191.144 7.69531 191.097 7.42578 191.004 7.17969C190.91 6.93359 190.769 6.72852 190.582 6.56445C190.429 6.41211 190.236 6.29492 190.002 6.21289C189.767 6.11914 189.498 6.07227 189.193 6.07227C188.888 6.07227 188.613 6.11914 188.367 6.21289C188.132 6.29492 187.939 6.41211 187.787 6.56445C187.599 6.74023 187.459 6.95117 187.365 7.19727C187.283 7.44336 187.242 7.70703 187.242 7.98828ZM202.456 32H205.708V18.3594C205.931 17.9492 206.189 17.5742 206.482 17.2344C206.786 16.8945 207.114 16.5957 207.466 16.3379C207.9 16.0449 208.374 15.8164 208.89 15.6523C209.405 15.4766 209.962 15.3887 210.56 15.3887C211.251 15.3887 211.861 15.4707 212.388 15.6348C212.927 15.7988 213.384 16.0625 213.759 16.4258C214.122 16.7891 214.398 17.2637 214.585 17.8496C214.773 18.4355 214.866 19.1504 214.866 19.9941V32H218.118V19.9238C218.118 18.6582 217.96 17.5684 217.644 16.6543C217.339 15.7285 216.9 14.9668 216.325 14.3691C215.751 13.7715 215.054 13.332 214.234 13.0508C213.425 12.7695 212.523 12.6289 211.527 12.6289C210.788 12.6406 210.085 12.752 209.417 12.9629C208.761 13.1621 208.152 13.4492 207.589 13.8242C207.214 14.0703 206.857 14.3633 206.517 14.7031C206.189 15.0312 205.884 15.3945 205.603 15.793L205.374 12.9805H202.456V32Z" fill="white"/>
+                             <path d="M18.5341 14.6362C17.2295 10.1881 13.6977 7 9.54545 7C4.27955 7 0 12.1354 0 18.4543C0 24.7733 4.27955 29.9087 9.54545 29.9087C13.6977 29.9087 17.2295 26.7206 18.5341 22.2725H25.4545V29.9087H31.8182V22.2725H35V14.6362H18.5341ZM9.54545 22.2725C7.79545 22.2725 6.36364 20.5543 6.36364 18.4543C6.36364 16.3544 7.79545 14.6362 9.54545 14.6362C11.2955 14.6362 12.7273 16.3544 12.7273 18.4543C12.7273 20.5543 11.2955 22.2725 9.54545 22.2725Z" fill="white"/>
+                             </svg>
+
+
+                </a></li>
+                            <li class="item"><a href="#result">Result</a></li>
+                            <li class="item"><a href="#process">Process</a></li>
+                            <li class="item"><a href="#issues">Issues</a></li>
+                        </ul>
+                    </nav>
+
+
+<section id="header">
+<object style="width: 100%; height: 100%;" type="image/svg+xml" data="websiteSVG/headerwithtext.svg">Your browser does not support SVGs blip blop</object>
+
+
+</section>
+
+ <section id="result">
+ <img src="websiteSVG/placeholderResultApp.jpg" id="resultAppPictures">
+ <p id="resultAppText">Keychain makes it possible to share keys with anyone, right through the phone! No more need for meeting up to exchange keys.</p>
+ <li class="logo"><a href="https://github.com/Kitzing/TemporaryDigitalKeys">
+ <object id="gitButton" type="image/svg+xml" data="websiteSVG/githubbutton.svg" ></object>
+ </a>
+ </li>
+
+ <div id="rectangles" class="divSize">
+ <div id="rectangleOne">
+
+ <h2>Project description</h2>
+ <p>The project is a part of the course Mobile Computing on Chalmers University of Technology. The goal was to design a new, innovative action on the theme of authentication and access.</p>
+
+</div>
+<div id="rectangleTwo">
+
+ <h2>Project scope</h2>
+ <p>This specific project is focused on physical acces with the approach of Designing for the real world.</p>
+
+</div>
+</div>
+
+<div id="promotionDiv" class="divSize">
+<div id="goalChallenge">
+<h2>Goals</h2>
+ <img src="websiteSVG/goalsPlaceholder.png" id="goalImage">
+
+<div id="challenge">
+<h2 >Design challenge</h2>
+<p>Creating a prototype that allows the users to share digital keys with each other, without it being more complex than lending an actual key.
+
+<hr><hr>
+
+   The application was created as an aid for researching the UX-possibilities when solving the problem of the constraints that physical keys create.</p>
+</div>
+</div>
+
+<div id="promotionVideo">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/orXAg5dIMa8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+</div>
+
+<div id="futureDiv" class="divSize">
+
+<div id="resDiv">
+<h2>Results</h2>
+<p>A Kotlin application with a functioning interaction flow. The front-end and back-end isn’t connected due to the time limitation of the project.
+<hr>
+   The project was evaluated on five participants that got to test the application in a real life scenario. The results from this where:</p>
+
+</div>
+
+<div id="futDiv">
+<h2>Future development</h2>
+<p>
+
+Connect the front-end with the back-end to enable the possibility to update keys and save states then the application is shut down
+<hr>
+Add accounts and the possiblity to sign in
+<hr>
+Future reserach on how NFC should be implemented in order to open RFID-receivers
+</p>
+
+</div>
+</div>
+
+
+
+
+</section>
+
+<section id="process">
+
+<div id="processHeader">
+<object style="width: 100%; height: 100%;" type="image/svg+xml" data="websiteSVG/processHeader.svg">Your browser does not support SVGs blip blop</object>
+
+</div>
+<div class="processBackground">
+
+<div id="iterationOne">
+<div id="firstIteration">
+<h2 class="iterationHeaders">First iteration</h2>
+<object style="width: 600px; height: 760px; margin-left: 160px" type="image/svg+xml" data="websiteSVG/firstIteration.svg">Your browser does not support SVGs blip blop</object>
+</div>
+
+
+<div id="brainstorming">
+
+<p class="boldText">Focus:</p>
+<p class="smallText">Ideate on what features would be needed.</p>
+<hr>
+<p class="boldText">Results: </p>
+    <ul class="listWidth">
+    <li class="smallText">Mutliple keys</li>
+    <li class="smallText">Activate and deactivate given keys</li>
+    <li class="smallText">Give away keys</li>
+</ul>
+<ul class="listWidth" id="rightList">
+    <li class="smallText">Accept keys</li>
+    <li class="smallText">Open doors through application</li>
+    <li class="smallText">Constraint on time or number of uses for keys</li>
+</ul>
+
+</div>
+
+<div id="lofi">
+<p class="boldText">Focus:</p>
+<p class="smallText">Creating a prototype including the features from the brainstorming in a simplistic design.</p>
+<br>
+<p class="boldText">Results: </p>
+<p class="smallText">A low-fidelity prototype created in Figma, the look is shown below.</p>
+</div>
+
+<div id="heuristic">
+
+<p class="boldText">Focus:</p>
+<p class="smallText">Using Jakob Nielsen’s 10 principles for interaction design to get insights on how the application’s interaction could be improved.</p>
+<hr>
+<p class="boldText">Results: </p>
+    <ul class="listWidth">
+    <li class="smallText">Simple interactions</li>
+    <li class="smallText">Consistent design</li>
+    <li class="smallText">The design is astetic and minimalistic </li>
+</ul>
+<ul class="listWidth" id="rightList">
+    <li class="smallText">Help and documentation is missing</li>
+    <li class="smallText">Cancel and back actions are missing</li>
+</ul>
+
+</div>
+
+<div id="resOneDiv">
+<h2 id="designHeader">Design</h2>
+<img id="resultOnePic" src="websiteSVG/it1Res.jpg">
+
+</div>
+
+
+</div>
+<div id="iterationTwo">
+<div id="secondIteration">
+<h2 class="iterationHeaders">Second iteration</h2>
+<object style="width: 600px; height: 760px; margin-left: 160px" type="image/svg+xml" data="websiteSVG/secondIteration.svg">Your browser does not support SVGs blip blop</object>
+</div>
+
+<div id="brainwriting">
+
+<p class="boldText">Focus:</p>
+<p class="smallText">Find specific areas where the prototype from last iteration could be useful.</p>
+<hr>
+<p class="boldText">Results: </p>
+<p class="smallText">Two videos showing the scenarios we thought was the most interesting: sharing a vehicle and letting a friend into your house. This due to them being the closest to everyday problems.</p>
+</div>
+
+<div id="interactive">
+
+<p class="boldText">Focus:</p>
+<p class="smallText">Creating a higher fidelity prototype including interactions to communicate our ideas to others.</p>
+<hr>
+<p class="boldText">Results: </p>
+<p class="smallText">An interactive Figma protype using Materials’ graphical elements and colour picker.</p>
+</div>
+
+<div id="interview">
+
+<p class="boldText">Focus:</p>
+<p class="smallText">Evaluate the scnearios together with the application’s interaction through doing evaluation interviews with 4 participants. </p>
+<hr>
+<p class="boldText">Results: </p>
+<p class="smallText">The interviewees clicked around in the Figma interface and the scenarios was explained and showed through the videos. Questions about their thoughts and impressions was asked throughout the evaluation.</p>
+<ul class="listWidth">
+    <li class="smallText">“It seems to be easy to use”/li>
+    <li class="smallText">“I would use it a lot”</li>
+    <li class="smallText">“Very environmental friendly” on sharing a vehicle</li>
+</ul>
+<ul class="listWidth" id="rightList">
+    <li class="smallText">“I felt like it could be possible to lend a key on accident”</li>
+    <li class="smallText">“There is no feedback on how my bike is taken care of, unsecure”</li>
+</ul>
+
+</div>
+
+<div id="iterationVideos">
+<div id="videoOne">
+ <iframe  width="200" height="112,5" src="https://www.youtube.com/embed/orXAg5dIMa8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div>
+ <div id="videoTwo">
+ <iframe width="200" height="112,5" src="https://www.youtube.com/embed/orXAg5dIMa8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+</div>
+
+
+</section>
+
+<section id="issues">
+issues
+
+</section>
+       <!-- <object style="width: 100%; height: 100%;" type="image/svg+xml" data="figma.svg">Your browser does not support SVGs blip blop</object>
+
+    -->
     </body>
 </html>
