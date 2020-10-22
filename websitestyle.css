@@ -225,7 +225,7 @@ a {
 /*Process*/
 
 #process{
-    height: 3000px;
+    height: 3075px;
     width: 100%;
 }
 
@@ -233,6 +233,7 @@ a {
     background-color: #A5D6A7;
     margin-top: -10px;
     width: 100%;
+    margin-bottom: -1px;
 }
 
 #iterationOne{
@@ -294,7 +295,7 @@ a {
 }
 
 #iterationTwo{
-    height: 1200px;
+    height: 1300px;
 
 }
 
@@ -321,15 +322,26 @@ a {
 }
 
 #videoOne{
-    width: 200px;
-    height: 112,5px;
-    margin-left: 200px;
+    width: 250px;
+    height: 112px;
+    margin-left: 150px;
+    margin-top: 50px;
 }
 
 #videoTwo{
-    width: 200px;
-    height: 112,5px;
-    margin-left: 50px;
+    width: 250px;
+    height: 112px;
+    margin-left: 450px;
+    margin-top: -110px;
+}
+
+#resTwoDiv{
+    margin-top: 110px;
+}
+
+#issues{
+    height: 200px;
+
 }
 
 
