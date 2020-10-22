@@ -237,7 +237,7 @@ a {
 }
 
 #iterationOne{
-    height: 1250px;
+    height: 1300px;
 
 }
 
@@ -250,7 +250,7 @@ a {
 #brainstorming{
     position: absolute;
     margin-left: 550px;
-    margin-top: -760px;
+    margin-top: -810px;
 }
 
 .listWidth{
@@ -265,14 +265,14 @@ a {
 #lofi{
     position: absolute;
     margin-left: 830px;
-    margin-top: -470px;
+    margin-top: -520px;
     width: 450px;
 }
 
 #heuristic{
     position: absolute;
     margin-left: 550px;
-    margin-top: -200px;
+    margin-top: -230px;
     width: 500px;
 }
 
@@ -295,14 +295,14 @@ a {
 }
 
 #iterationTwo{
-    height: 1300px;
+    height: 1400px;
 
 }
 
 #brainwriting{
     position: absolute;
     margin-left: 830px;
-    margin-top: -740px;
+    margin-top: -820px;
     width: 450px;
 }
 
@@ -310,22 +310,32 @@ a {
 #interactive{
     position: absolute;
     margin-left: 550px;
-    margin-top: -470px;
+    margin-top: -540px;
     width: 500px;
 }
 
 #interview{
     position: absolute;
     margin-left: 830px;
-    margin-top: -200px;
+    margin-top: -290px;
     width: 500px;
 }
+
+#interviewListOne{
+    margin-top: 30px;
+}
+
+#interviewListTwo{
+    margin-left: 280px;
+    margin-top: -140px;
+}
+
 
 #videoOne{
     width: 250px;
     height: 112px;
     margin-left: 150px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 #videoTwo{
