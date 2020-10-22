@@ -33,4 +33,6 @@
     <string name="to">To</string>
     <string name="my_keys">My keys</string>
     <string name="key_chain">Keychain</string>
+    <string name="edit_key">Edit key</string>
+    <string name="change_key">Change key</string>
 </resources>

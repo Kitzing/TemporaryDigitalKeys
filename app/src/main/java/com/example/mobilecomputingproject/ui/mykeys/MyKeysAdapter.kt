@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mobilecomputingproject.R
 
-import kotlinx.android.synthetic.main.settings_keys_list_item.view.*
+import kotlinx.android.synthetic.main.mykeys_list_item.view.*
 
 //Adapter for creating items in My keys key list
 
@@ -40,7 +40,7 @@ class MyKeysAdapter (private val keyList: List<KeyListItem> ,private val listene
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): KeyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(
-            R.layout.settings_keys_list_item,
+            R.layout.mykeys_list_item,
             parent, false)
 
         return KeyViewHolder(itemView)

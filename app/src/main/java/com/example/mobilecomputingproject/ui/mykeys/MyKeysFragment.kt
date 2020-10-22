@@ -9,11 +9,10 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mobilecomputingproject.R
-import com.example.mobilecomputingproject.ui.lend.LendFragmentDirections
-import kotlinx.android.synthetic.main.fragment_lend.view.*
-import kotlinx.android.synthetic.main.fragment_settings.view.*
+import kotlinx.android.synthetic.main.fragment_mykeys.view.*
 
 class MyKeysFragment : Fragment(), MyKeysAdapter.OnButtonClickListener {
 
@@ -25,7 +24,7 @@ class MyKeysFragment : Fragment(), MyKeysAdapter.OnButtonClickListener {
         savedInstanceState: Bundle?
     ): View? {
 
-        val root = inflater.inflate(R.layout.fragment_settings, container, false)
+        val root = inflater.inflate(R.layout.fragment_mykeys, container, false)
 
         //TODO fill your information text fields with users information from the database
 
@@ -49,6 +48,7 @@ class MyKeysFragment : Fragment(), MyKeysAdapter.OnButtonClickListener {
     }
 
     override fun onButtonClick(position: Int, button: Button) {
-        //TODO connect to edit-view
+        findNavController().navigate(MyKeysFragmentDirections.actionNavigationMykeysToEditFragment())
+        //TODO send value of selected key into edit fragment
     }
 }

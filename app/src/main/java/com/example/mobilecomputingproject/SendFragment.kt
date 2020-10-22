@@ -10,7 +10,7 @@ import androidx.navigation.findNavController
 import com.example.mobilecomputingproject.ui.lend.LendFragmentDirections
 import com.example.mobilecomputingproject.ui.lend.LendListItem
 import com.example.mobilecomputingproject.ui.lend.LendViewModel
-import kotlinx.android.synthetic.main.fragment_choose.view.*
+import kotlinx.android.synthetic.main.fragment_select.view.*
 import kotlinx.android.synthetic.main.fragment_send.view.*
 
 

@@ -32,6 +32,11 @@ class AddFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_add, container, false)
 
 
+        root.select_key_button.setOnClickListener{
+
+            //TODO add logic to get the NFC for the specific key you want to add
+        }
+
         root.add_key_button.setOnClickListener{
                 view : View ->
             view.findNavController().navigate(AddFragmentDirections.actionAddFragmentToNavigationNotifications())

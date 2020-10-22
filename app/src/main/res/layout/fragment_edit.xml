@@ -4,21 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".AddFragment">
+    tools:context=".EditFragment">
 
     <TextView
-        android:id="@+id/newKeyHeader"
+        android:id="@+id/editKeyHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:text="@string/add_new_key"
+        android:text="@string/edit_key"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextKeyName"
+        android:id="@+id/editKeyName"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -28,10 +28,10 @@
         android:text="@string/key_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/newKeyHeader" />
+        app:layout_constraintTop_toBottomOf="@id/editKeyHeader" />
 
     <EditText
-        android:id="@+id/editTextKeyAddress"
+        android:id="@+id/editKeyAddress"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -40,10 +40,10 @@
         android:text="@string/address_or_position"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextKeyName"/>
+        app:layout_constraintTop_toBottomOf="@id/editKeyName"/>
 
     <EditText
-        android:id="@+id/editTextKeyZip"
+        android:id="@+id/editKeyZip"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -51,23 +51,23 @@
         android:ems="10"
         android:text="@string/zip_code"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/editTextKeyCity"
-        app:layout_constraintTop_toBottomOf="@id/editTextKeyAddress"/>
+        app:layout_constraintEnd_toStartOf="@id/editKeyCity"
+        app:layout_constraintTop_toBottomOf="@id/editKeyAddress"/>
 
     <EditText
-        android:id="@+id/editTextKeyCity"
+        android:id="@+id/editKeyCity"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:text="@string/city"
-        app:layout_constraintStart_toEndOf="@id/editTextKeyZip"
-        app:layout_constraintTop_toBottomOf="@id/editTextKeyAddress"
+        app:layout_constraintStart_toEndOf="@id/editKeyZip"
+        app:layout_constraintTop_toBottomOf="@id/editKeyAddress"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:id="@+id/imageText"
+        android:id="@+id/edit_choose_key"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Choose key"
@@ -78,30 +78,30 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/select_key_button"
-        app:layout_constraintTop_toBottomOf="@id/editTextKeyCity"/>
+        app:layout_constraintEnd_toStartOf="@id/edit_select_key_button"
+        app:layout_constraintTop_toBottomOf="@id/editKeyCity"/>
 
 
     <Button
-        android:id="@+id/select_key_button"
+        android:id="@+id/edit_select_key_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/ButtonStyle"
-        android:text="Select key to add"
+        android:text="@string/change_key"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@id/imageText"
+        app:layout_constraintStart_toEndOf="@id/edit_choose_key"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextKeyCity"/>
+        app:layout_constraintTop_toBottomOf="@id/editKeyCity"/>
 
     <Button
-        android:id="@+id/add_key_button"
+        android:id="@+id/save_key_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/ButtonStyle"
-        android:text="@string/add_key"
+        android:text="@string/save_changes"
         android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/select_key_button"/>
+        app:layout_constraintTop_toBottomOf="@id/edit_select_key_button"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
