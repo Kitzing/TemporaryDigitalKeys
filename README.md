@@ -4,7 +4,10 @@ Project in CIU196 Mobile computing - Design & Implementation done by Sara Kitzin
 
 ## How to: download & run
 
-TBD
+Download the project on github, then follow Android Developers tutorial on how to run an application:
+https://developer.android.com/training/basics/firstapp/running-app
+
+We have mainly used Pixel XL with API 30 when developing the application.
 
 ## Link to project website
 

@@ -1,0 +1,452 @@
+/* Basic styling */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none;
+
+}
+
+.smallText{
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 23px;
+}
+
+.boldText {
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+h2{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 47px;
+
+    color: #000000;
+}
+
+nav {
+    background: #3949AB;
+    padding: 0 15px;
+    height: 65px;
+}
+
+.scrolled {
+    background-color: rgba(34, 34, 34, 0.8);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.item {
+    padding: 10px;
+}
+
+.item:not(.button) a:hover, .item a:hover::after {
+    color: #A5D6A7;
+}
+
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+
+.h-100 {
+    height: 100%!important;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Pages*/
+
+.divSize{
+    margin-right: auto;
+    margin-left: auto;
+    width: 1300px;
+
+}
+
+/*Header*/
+#header{
+
+
+}
+
+/*Result*/
+
+#result{
+    height: 2050px;
+    width: 100%;
+
+
+}
+
+#firstDiv{
+    margin-top: 20px;
+    height: 500px;
+
+}
+
+
+
+#resultAppPictures{
+    position: absolute;
+    width: 813px;
+    height: 427px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+#resultAppText{
+    position: absolute;
+    width: 400px;
+    height: calc(288*0,8)px;
+    margin-left: 970px;
+    margin-top: 150px;
+
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+
+    color: #000000;
+}
+
+#gitButton{
+    position: absolute;
+    width: 423px;
+    height: 77px;
+    margin-left: 920px;
+    margin-top: 300px;
+}
+
+#rectangles{
+    margin-top: 10px;
+    height: 250px;
+    width: 1200px;
+
+}
+
+#rectangleOne{
+    position: absolute;
+    width: 550px;
+
+    border: 5px solid #A5D6A7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#rectangleTwo{
+    position: absolute;
+    width: 550px;
+    margin-left: 650px;
+
+    border: 5px solid #A5D6A7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#promotionDiv{
+    margin-top: 50px;
+    height: 550px;
+}
+
+#goalImage{
+    position: absolute;
+    width: 580px;
+    height: 154px;
+}
+
+#challenge{
+    margin-top: 190px;
+}
+
+#goalChallenge{
+    position: absolute;
+    width: 650px;
+}
+
+#promotionVideo{
+    position: absolute;
+    margin-left: 700px;
+    width: 560px;
+    margin-top: 50px;
+}
+
+#futureDiv{
+    height: 600px;
+}
+
+#resDiv{
+    width: 620px;
+}
+
+#futDiv{
+    width: 620px;
+    margin-left: 690px;
+}
+
+/*Process*/
+
+#process{
+    height: 3075px;
+    width: 100%;
+}
+
+.processBackground{
+    background-color: #A5D6A7;
+    margin-top: -10px;
+    width: 100%;
+    margin-bottom: -1px;
+}
+
+#iterationOne{
+    height: 1300px;
+
+}
+
+.iterationHeaders{
+    margin-left: 160px;
+    color: white;
+
+}
+
+#brainstorming{
+    position: absolute;
+    margin-left: 550px;
+    margin-top: -810px;
+}
+
+.listWidth{
+    width: 250px;
+}
+
+#rightList{
+    margin-left: 280px;
+    margin-top: -100px;
+}
+
+#lofi{
+    position: absolute;
+    margin-left: 830px;
+    margin-top: -520px;
+    width: 450px;
+}
+
+#heuristic{
+    position: absolute;
+    margin-left: 550px;
+    margin-top: -230px;
+    width: 500px;
+}
+
+#resOneDiv{
+    margin-top: 50px;
+}
+
+#designHeader{
+    margin-left: 300px;
+    color: white;
+    font-size: 17px;
+}
+
+#resultOnePic{
+    position: absolute;
+    width: 800px;
+    height: 285px;
+    margin-left: 300px;
+
+}
+
+#iterationTwo{
+    height: 1400px;
+
+}
+
+#brainwriting{
+    position: absolute;
+    margin-left: 830px;
+    margin-top: -820px;
+    width: 450px;
+}
+
+
+#interactive{
+    position: absolute;
+    margin-left: 550px;
+    margin-top: -540px;
+    width: 500px;
+}
+
+#interview{
+    position: absolute;
+    margin-left: 830px;
+    margin-top: -290px;
+    width: 500px;
+}
+
+#interviewListOne{
+    margin-top: 30px;
+}
+
+#interviewListTwo{
+    margin-left: 280px;
+    margin-top: -140px;
+}
+
+
+#videoOne{
+    width: 250px;
+    height: 112px;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+#videoTwo{
+    width: 250px;
+    height: 112px;
+    margin-left: 450px;
+    margin-top: -110px;
+}
+
+#resTwoDiv{
+    margin-top: 110px;
+}
+
+#issues{
+    height: 200px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+    border-top: 2px solid rgba(49, 49, 49, 0.541);
+}
+
+.active .item {
+    display: block;
+}
+
+
+
+
+/* Tablet */
+
+@media all and (min-width: 700px) {
+    .menu {
+        justify-content: center;
+    }
+    .logo {
+        flex: 1;
+    }
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* Desktop */
+
+@media all and (min-width: 960px) {
+    .menu {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        background: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+        border-top: none;
+    }
+    .toggle {
+        display: none;
+    }
+    .grid-container {
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+}
