@@ -8,8 +8,11 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mobilecomputingproject.R
+import com.example.mobilecomputingproject.ui.lend.LendFragmentDirections
+import kotlinx.android.synthetic.main.fragment_lend.view.*
 import kotlinx.android.synthetic.main.fragment_settings.view.*
 
 class MyKeysFragment : Fragment(), MyKeysAdapter.OnButtonClickListener {
@@ -34,6 +37,11 @@ class MyKeysFragment : Fragment(), MyKeysAdapter.OnButtonClickListener {
         root.save_button.setOnClickListener{
             //TODO update database with new values
                 Toast.makeText(this.context, "Your settings are saved", Toast.LENGTH_SHORT)
+        }
+
+        root.add_button.setOnClickListener{
+                view : View ->
+            view.findNavController().navigate(MyKeysFragmentDirections.actionNavigationNotificationsToAddFragment())
         }
 
 

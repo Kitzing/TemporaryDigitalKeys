@@ -34,7 +34,11 @@
         android:id="@+id/addFragment"
         android:name="com.example.mobilecomputingproject.AddFragment"
         android:label="Lend keys"
-        tools:layout="@layout/fragment_add" />
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_navigation_notifications"
+            app:destination="@id/navigation_notifications" />
+    </fragment>
     <fragment
         android:id="@+id/chooseFragment"
         android:name="com.example.mobilecomputingproject.ui.select.ChooseFragment"

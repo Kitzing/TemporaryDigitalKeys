@@ -2,7 +2,6 @@ package com.example.mobilecomputingproject.ui.lend
 
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -56,8 +55,6 @@ class LendFragment : Fragment(), LendAdapter.OnButtonClickListener {
             button.setBackgroundColor(Color.parseColor("#C62828"))
         } else {
             Toast.makeText(this.context, "$name's key is now inactivated, should be removed", Toast.LENGTH_LONG).show()
-        //    button.setText("Activate now")
-        //    button.setBackgroundColor(Color.parseColor("#A5D6A7"))
 
             //TODO Remove listitem
         }
