@@ -29,10 +29,7 @@ class LendFragment : Fragment(), LendAdapter.OnButtonClickListener {
         lendViewModel =
             ViewModelProviders.of(this).get(LendViewModel::class.java)
         root = inflater.inflate(R.layout.fragment_lend, container, false)
-        //   val textView: TextView = root.findViewById(R.id.text_lend)
-        //lendViewModel.text.observe(viewLifecycleOwner, Observer {
-        //    textView.text = it
-       // })
+
 
 
         root.lend_list.adapter = LendAdapter(LendViewModel().exampleList, this)
@@ -45,11 +42,10 @@ class LendFragment : Fragment(), LendAdapter.OnButtonClickListener {
             view.findNavController().navigate(LendFragmentDirections.actionNavigationHomeToChooseFragment())
         }
 
-        Log.d("Test", LendViewModel().exampleList.toString())
-
 
             return root
         }
+
 
     override fun onButtonClick(position: Int, button: Button) {
         val clickedItem = LendViewModel().exampleList[position]
@@ -59,9 +55,11 @@ class LendFragment : Fragment(), LendAdapter.OnButtonClickListener {
             button.setText("Inactivate")
             button.setBackgroundColor(Color.parseColor("#C62828"))
         } else {
-            Toast.makeText(this.context, "$name's key is now inactivated", Toast.LENGTH_LONG).show()
-            button.setText("Activate now")
-            button.setBackgroundColor(Color.parseColor("#A5D6A7"))
+            Toast.makeText(this.context, "$name's key is now inactivated, should be removed", Toast.LENGTH_LONG).show()
+        //    button.setText("Activate now")
+        //    button.setBackgroundColor(Color.parseColor("#A5D6A7"))
+
+            //TODO Remove listitem
         }
 
 

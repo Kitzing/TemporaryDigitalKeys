@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mobilecomputingproject.R
 import kotlinx.android.synthetic.main.lend_list_item.view.*
 
+//Adapter for creating items in lend keys list
+
 class LendAdapter (private val lendList: List<LendListItem>, private val listener: OnButtonClickListener): RecyclerView.Adapter<LendAdapter.LendViewHolder>() {
 
 
@@ -52,6 +54,7 @@ class LendAdapter (private val lendList: List<LendListItem>, private val listene
         holder.date.text = currentItem.date
         holder.keytype.text = currentItem.keytype
 
+        //Sets button to red if the timespan is now i.e. key is acitavted
         if(currentItem.activate){
             holder.button.setText("Inactivate")
             holder.button.setBackgroundColor(Color.parseColor("#C62828"))
