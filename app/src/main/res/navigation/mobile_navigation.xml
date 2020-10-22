@@ -37,7 +37,7 @@
         tools:layout="@layout/fragment_add" />
     <fragment
         android:id="@+id/chooseFragment"
-        android:name="com.example.mobilecomputingproject.ChooseFragment"
+        android:name="com.example.mobilecomputingproject.ui.select.ChooseFragment"
         android:label="Lend keys"
         tools:layout="@layout/fragment_choose" >
         <action

@@ -1,19 +1,18 @@
-package com.example.mobilecomputingproject
+package com.example.mobilecomputingproject.ui.select
 
 import kotlinx.android.synthetic.main.select_key_list_item.view.*
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mobilecomputingproject.R
 
-import kotlinx.android.synthetic.main.settings_keys_list_item.view.*
+//Adapter for creating items in select key list
 
-class SelectKeyAdapter (private val keyList: List<SelectKeyListItem>, private val listener: SelectKeyAdapter.OnButtonClickListener): RecyclerView.Adapter<SelectKeyAdapter.SelectKeyViewHolder>() {
+class SelectKeyAdapter (private val keyList: List<SelectKeyListItem>, private val listener: OnButtonClickListener): RecyclerView.Adapter<SelectKeyAdapter.SelectKeyViewHolder>() {
 
 
 
