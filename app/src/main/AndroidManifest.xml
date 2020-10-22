@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".bottomNav"
+            android:name=".ui.bottomNav"
             android:label="@string/key_chain">
 
             <!--  </activity>

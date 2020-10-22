@@ -1,16 +1,13 @@
-package com.example.mobilecomputingproject
+package com.example.mobilecomputingproject.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.navigation.findNavController
-import com.example.mobilecomputingproject.ui.lend.LendFragmentDirections
+import com.example.mobilecomputingproject.R
 import com.example.mobilecomputingproject.ui.lend.LendListItem
-import com.example.mobilecomputingproject.ui.lend.LendViewModel
-import kotlinx.android.synthetic.main.fragment_select.view.*
 import kotlinx.android.synthetic.main.fragment_send.view.*
 
 
