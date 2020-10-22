@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.mobilecomputingproject.ui.settings.SettingsFragment"
+        android:name="com.example.mobilecomputingproject.ui.mykeys.MyKeysFragment"
         android:label="@string/my_keys"
         tools:layout="@layout/fragment_settings" >
         <action
