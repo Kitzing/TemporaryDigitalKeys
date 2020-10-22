@@ -8,11 +8,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mobilecomputingproject.R
+import com.example.mobilecomputingproject.SelectKeyListItem
 import com.example.mobilecomputingproject.database.Key
 
 import kotlinx.android.synthetic.main.settings_keys_list_item.view.*
 
-class KeyAdapter (private val listener: KeyAdapter.OnButtonClickListener): RecyclerView.Adapter<KeyAdapter.KeyViewHolder>() {
+class KeyAdapter (private val keyList: List<KeyListItem> ,private val listener: KeyAdapter.OnButtonClickListener): RecyclerView.Adapter<KeyAdapter.KeyViewHolder>() {
 
 
     var data = listOf<Key>()
@@ -24,7 +25,7 @@ class KeyAdapter (private val listener: KeyAdapter.OnButtonClickListener): Recyc
     inner class KeyViewHolder (itemView : View) : RecyclerView.ViewHolder (itemView), View.OnClickListener {
         val imageView: ImageView = itemView.key_image_view
         val name: TextView = itemView.key_text_view_name
-        val address: TextView = itemView.key_text_view_address
+        //val address: TextView = itemView.key_text_view_address
         val button: Button = itemView.edit_button
 
         init {
@@ -53,21 +54,23 @@ class KeyAdapter (private val listener: KeyAdapter.OnButtonClickListener): Recyc
     }
 
     override fun onBindViewHolder(holder: KeyViewHolder, position: Int) {
-        val item = data[position]
+        //val item = data[position]
+        val currentItem = keyList[position]
+
 
         holder.imageView.setImageResource(R.drawable.ic_key)
-        holder.name.text = item.keyName.toString()
-        holder.address.text = item.address.toString()
+        holder.name.text = currentItem.name
+        //holder.address.text = item.address.toString()
        // holder.imageView.setImageResource(currentItem.imageResource)
        // holder.name.text = currentItem.name
        // holder.address.text = currentItem.address
 
     }
 
-    override fun getItemCount() = data.size
+    override fun getItemCount() = keyList.size
 
 
 }
 
-data class KeyListItem (val imageResource: Int, val name: String, val address: String) {
+data class KeyListItem (val name: String) {
 }

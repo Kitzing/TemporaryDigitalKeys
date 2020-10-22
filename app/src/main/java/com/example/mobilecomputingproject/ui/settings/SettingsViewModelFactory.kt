@@ -10,7 +10,7 @@ import com.example.mobilecomputingproject.ui.settings.SettingsViewModel
  * This is pretty much boiler plate code for a ViewModel Factory.
  *
  * Provides the SleepDatabaseDao and context to the ViewModel.
- */
+
 class SettingsViewModelFactory(
     private val dataSource: KeyDatabaseDao) : ViewModelProvider.Factory {
     //, private val application: Application
@@ -22,3 +22,4 @@ class SettingsViewModelFactory(
         throw IllegalArgumentException("Unknown ViewModel class")
     }
 }
+ */

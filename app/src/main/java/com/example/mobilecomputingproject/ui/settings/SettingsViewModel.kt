@@ -5,11 +5,12 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.mobilecomputingproject.R
+import com.example.mobilecomputingproject.SelectKeyListItem
 import com.example.mobilecomputingproject.database.Key
 import com.example.mobilecomputingproject.database.KeyDatabaseDao
 import com.example.mobilecomputingproject.ui.receive.ReceiveListItem
 
-class SettingsViewModel(dataSource: KeyDatabaseDao) : ViewModel() {
+class SettingsViewModel() : ViewModel() {
 
     //, application: Application
 
@@ -18,7 +19,7 @@ class SettingsViewModel(dataSource: KeyDatabaseDao) : ViewModel() {
     }
    val text: LiveData<String> = _text
 
-    */
+
 
     val database = dataSource
 
@@ -27,7 +28,7 @@ class SettingsViewModel(dataSource: KeyDatabaseDao) : ViewModel() {
    // private val key: LiveData<Key>
 
 
-  /*  private val _yourKeysList = MutableLiveData<ArrayList<KeyListItem>>()
+    private val _yourKeysList = MutableLiveData<ArrayList<KeyListItem>>()
     val yourKeysList: LiveData<ArrayList<KeyListItem>>
         get() = _yourKeysList
 
@@ -43,26 +44,27 @@ class SettingsViewModel(dataSource: KeyDatabaseDao) : ViewModel() {
     private fun createKeyList(): List<KeyListItem> {
         val resList = ArrayList<KeyListItem>()
         val ownerIds = database.getAllKeysForOwner()
-    }
+    }*/
 
 
 
-    val exampleList = generateDummyList(20)
+    val exampleList = createDummyList()
 
 
-    private fun generateDummyList(size: Int): List<KeyListItem> {
+    private fun createDummyList(): List<KeyListItem> {
         val list = ArrayList<KeyListItem>()
-        for (i in 0 until size) {
-            val drawable = when (i % 3) {
-                0 -> R.drawable.ic_lock
-                1 -> R.drawable.ic_lock
-                else -> R.drawable.ic_lock
-            }
-            val item = KeyListItem(drawable, "Item $i", "Address and other fun information")
-            list += item
-        }
+
+        val item1 = KeyListItem("Home key")
+        val item2 = KeyListItem("Storage room")
+        val item3 = KeyListItem("Car key")
+
+        list += item1
+        list += item2
+        list += item3
+
 
         return list
+
     }
-*/
+
 }
