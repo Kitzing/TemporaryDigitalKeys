@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mobilecomputingproject.R
 import kotlinx.android.synthetic.main.receive_list_item.view.*
 
+//Adapter for creating items in receive keys list
+
 class ReceiveAdapter (private val receiveList: List<ReceiveListItem>, private val listener: ReceiveAdapter.OnButtonClickListener): RecyclerView.Adapter<ReceiveAdapter.ReceiveViewHolder>() {
 
 

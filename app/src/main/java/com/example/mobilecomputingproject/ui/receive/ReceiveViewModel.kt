@@ -9,15 +9,11 @@ import com.example.mobilecomputingproject.ui.lend.LendListItem
 
 class ReceiveViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
-    }
-  //  val text: LiveData<String> = _text
-
-
+    //TODO take items from database instead
     val exampleList = createDummyList()
 
 
+    //Creates a dummy list of items, instead of using database
     private fun createDummyList(): List<ReceiveListItem>{
         val list = ArrayList<ReceiveListItem>()
 
@@ -38,24 +34,3 @@ class ReceiveViewModel : ViewModel() {
         return list
     }
 }
-
-/*
-private fun generateDummyList(size: Int): List<ReceiveListItem> {
-        val list = ArrayList<ReceiveListItem>()
-        for (i in 0 until size) {
-            val drawable = when (i % 3) {
-                0 -> R.drawable.ic_lock
-                1 -> R.drawable.ic_lock
-                else -> R.drawable.ic_lock
-            }
-            val item = ReceiveListItem(drawable, "Item $i", "Line 2", "Date")
-            list += item
-        }
-
-        return list
-    }
-
-
-}
-
- */

@@ -30,10 +30,7 @@ class ReceiveFragment : Fragment(), ReceiveAdapter.OnButtonClickListener {
         receiveViewModel =
             ViewModelProviders.of(this).get(ReceiveViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_receive, container, false)
-        //   val textView: TextView = root.findViewById(R.id.text_dashboard)
-        //   dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
-        //       textView.text = it
-        //   })
+
 
         root.receive_list.adapter = ReceiveAdapter(ReceiveViewModel().exampleList, this)
         root.receive_list.layoutManager = LinearLayoutManager(this.context)
@@ -41,6 +38,7 @@ class ReceiveFragment : Fragment(), ReceiveAdapter.OnButtonClickListener {
 
         return root
     }
+
 
     override fun onButtonClick(position: Int, button: Button) {
         val clickedItem = LendViewModel().exampleList[position]
@@ -50,7 +48,8 @@ class ReceiveFragment : Fragment(), ReceiveAdapter.OnButtonClickListener {
             "$name is now activated, please hold your phone against the receiver",
             Toast.LENGTH_LONG
         ).show()
-        //TODO Launch NFC
+
+        //TODO Launch NFC to be able to open lock
     }
 
 }
