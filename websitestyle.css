@@ -229,6 +229,19 @@ a {
 #futDiv{
     width: 620px;
     margin-left: 690px;
+    margin-top: -790px;
+}
+
+#picOpenDoor{
+    margin-top: 50px;
+    width:620px;
+    height: 350px;
+}
+
+#picResult{
+    margin-top: 50px;
+    width: 620px;
+    height: 340px;
 }
 
 /*Process*/
@@ -304,7 +317,7 @@ a {
 }
 
 #iterationTwo{
-    height: 1400px;
+    height: 1450px;
 
 }
 
@@ -341,21 +354,21 @@ a {
 
 
 #videoOne{
-    width: 250px;
-    height: 112px;
-    margin-left: 150px;
+    width: 300px;
+    height: 169px;
+    margin-left: 80px;
     margin-top: 10px;
 }
 
 #videoTwo{
-    width: 250px;
-    height: 112px;
+    width: 300px;
+    height: 169px;
     margin-left: 450px;
-    margin-top: -110px;
+    margin-top: -169px;
 }
 
 #resTwoDiv{
-    margin-top: 110px;
+    margin-top: 80px;
 }
 
 #issues{
